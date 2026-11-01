@@ -1,0 +1,26 @@
+ .sidebar {
+  width: 252px; min-width: 252px; min-height: 100vh; padding: 27px 17px 20px;
+  display: flex; flex-direction: column; background: #17172b; color: #fff;
+}
+.brand { display: flex; align-items: center; gap: 11px; padding: 0 9px 37px; }
+.brand-mark { width: 38px; height: 38px; display: grid; place-items: center; color: white; background: linear-gradient(140deg,#8c6cf0,#5c3cc4); border-radius: 11px; }
+.brand h2 { margin: 0; font: 800 17px 'Manrope',sans-serif; letter-spacing: -.5px; }
+.brand h2 span { color: #a995ff; margin-left: 4px; }
+.brand small { display: block; margin-top: 3px; color: #85859f; font-size: 8px; letter-spacing: 1.35px; font-weight: 700; }
+.sidebar-label { padding: 0 11px; margin-bottom: 12px; color: #777791; font-size: 10px; font-weight: 700; letter-spacing: 1.4px; }
+.side-nav { display: grid; gap: 7px; }
+.side-nav button { display: flex; align-items: center; gap: 12px; width: 100%; padding: 12px 13px; border: 0; border-radius: 9px; background: transparent; color: #aaaabe; text-align: left; font-size: 13px; cursor: pointer; }
+.side-nav button:hover { color: white; background: #25253e; }
+.side-nav button.active { color: white; background: #6741d9; box-shadow: 0 5px 15px #08081755; font-weight: 600; }
+.sidebar-bottom { margin-top: auto; }
+.sidebar-tip { padding: 15px; background: #22223a; border: 1px solid #33334d; border-radius: 11px; color: #b7a8ff; }
+.sidebar-tip strong { margin-left: 7px; font-size: 11px; color: #e4e0ff; }
+.sidebar-tip p { margin: 8px 0 0; color: #a2a2b8; font-size: 10px; line-height: 1.6; }
+.sidebar-version { margin: 20px 8px 0; color: #6f6f88; font-size: 8px; letter-spacing: 1px; }
+@media (max-width: 760px) {
+  .sidebar { width: 100%; min-width: 0; min-height: auto; padding: 13px 16px; }
+  .brand { padding: 0 5px 13px; }
+  .sidebar-label, .sidebar-bottom { display: none; }
+  .side-nav { display: flex; }
+  .side-nav button { justify-content: center; padding: 10px 8px; font-size: 11px; }
+}

@@ -1,0 +1,1 @@
+# Frontend\n\nThis is the React/Vite frontend for AI Editorial Workspace. For complete setup and run instructions, see the project-root `README.md`.\n
