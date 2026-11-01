@@ -33,7 +33,7 @@ function ResearchAssistant() {
     setReport("")
     setError("")
     try {
-      const response = await fetch("/api/research", {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/research`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ urls: sources })
